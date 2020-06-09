@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>AWOSOME WEBSITE</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+		 <a href="index.html" class="active"> HOME </a> 
+			 <a href="about.html" > CLOCK </a>
+
+		<div id="progressbar"></div>
+		<div id="scrollpath"></div>
+		<section>
+			<h2> WELCOME </h2>
+			<h2> TO MY  WEBSITE <br> CLICK THE CLOCK BUTTON </h2>
+			<h2> FOR MORE AMAZING AND  INTERSTING  WEBSITE <br> <br> <br> FOLLOW US ON   </h2>
+
+			<br>
+
+			<a href="https://www.instagram.com/amiy_pvt/" id="insta">  INSTAGRAM </a>
+
+			<br><br><br>
+
+			<h2> WEBSITE IS RECOMMENDED FOR DESKTOP SITE  </h2>
+
+			<br><br><br>
+
+			<h2> I POST ALL AMAZING WEBSITE ON MY INSTAGRAM PAGE IF YOU WANT TO TRY OUT SOME AND SEE THE CODE CLICK THE INSTAGRAM BUTTON  </h2>
+				
+			<p id="post"> FOR GAMING AND HUMOUR FOLLOW US ON 
+
+			</p><br>
+
+			<a href="#" id="yt"> <img src="yt.jpg" width="15" height="15"> YOUTUBE </a>
+			
+		</section>
+
+
+
+		<script type="text/javascript">
+			
+			let progress = document.getElementById('progressbar');
+
+			let totalHeight = document.body.scrollHeight - window.innerHeight;
+			window.onscroll = function(){
+				let progressHeight = (window.pageYOffset / totalHeight) * 100;
+				progress.style.height = progressHeight + "%" ;
+			}
+		</script>
+</body>
+</html>

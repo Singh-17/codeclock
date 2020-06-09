@@ -1,0 +1,124 @@
+
+body {
+	background-image: url(../lapi.jpg); 
+	
+}
+
+#post{
+
+	float: left;
+	color: #01ee87;
+	font-size: 2.5em;
+}
+
+#yt{
+	background: #c4302b;
+	
+
+}
+
+ a{
+	display: block;
+	width: 100px;
+	margin: 25px;
+	text-decoration: none;
+	border-radius: 40px;
+	background: linear-gradient(90deg,#0162c8,#55e7fc) ;
+	text-align: center;
+	float: left;
+	list-style-type: none;
+}
+
+a:nth-child(2){
+	background: linear-gradient(90deg,#755bea,#ff72c0) ;
+}
+
+a{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	transition:0.6s ease;
+	display: inline-block;
+}
+
+a:hover{
+	background: linear-gradient(90deg,#f77bca,#7f52e0) ;
+	color: #000;
+}
+
+.active{
+	color: #000;
+}
+
+#insta{
+	 background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+section{
+	padding:50px;
+	
+}
+
+section h2{
+	font-size: 2.5em;
+	color: #01ee87;
+}
+
+::-webkit-scrollbar{
+	width: 0;
+}
+
+#scrollpath{
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 10px;
+	
+	background: rgba(255,255,255,0.05);
+}
+
+#progressbar{
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 10px;
+	height: 100%;
+	background: linear-gradient(to top,#008aff,#00ffe7) ;
+	animation: animate 5s linear infinite;
+}
+
+@keyframes animate{
+
+	0%,100%
+	{
+		filter: hue-rotate(0deg);
+	}
+	50%
+	{
+		filter: hue-rotate(360deg);
+	}
+
+}
+
+#progressbar:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to top,#008aff,#00ffe7) ;
+	filter: blur(10px);
+}
+
+#progressbar:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to top,#008aff,#00ffe7) ;
+	filter: blur(30px);
+}
+
